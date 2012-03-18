@@ -21,8 +21,7 @@
   #define LISO_CLASS_DECLSPEC    __declspec(dllimport)
 #endif
 
-#include "..\InteroperatingLibrary\include\open_cv_interoperating.h"
-
+#include "..\..\InteroperatingLibrary\include\open_cv_interoperating.h"
 #include <string>
 
 namespace lib_parking_tracking{
