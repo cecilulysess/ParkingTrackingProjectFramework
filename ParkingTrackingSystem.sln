@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParkingTrackingSystem", "ParkingTrackingSystem\ParkingTrackingSystem.vcxproj", "{12B4360B-743C-4B8D-849E-EAEBC6C6AB78}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LicensePlateRecognitionModule", "LicensePlateRecognitionModule\LicensePlateRecognitionModule.vcxproj", "{735AC961-FC3F-4717-A479-ADC857AA6C96}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LicensePlateDetectionModule", "LicensePlateDetectionModule\LicensePlateDetectionModule.vcxproj", "{F8089594-EB9D-45E1-8004-3058CC0D8702}"
@@ -13,16 +11,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CarRearDetectionModule", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InteroperatingLibrary", "InteroperatingLibrary\InteroperatingLibrary.vcxproj", "{C0C82CF8-7648-4377-9CA4-CA06BA421FC3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParkingTrackingSystem", "ParkingTrackingSystem\ParkingTrackingSystem.vcxproj", "{CB865443-7DD7-43E9-9ABB-4D9511FA3954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12B4360B-743C-4B8D-849E-EAEBC6C6AB78}.Debug|Win32.ActiveCfg = Debug|Win32
-		{12B4360B-743C-4B8D-849E-EAEBC6C6AB78}.Debug|Win32.Build.0 = Debug|Win32
-		{12B4360B-743C-4B8D-849E-EAEBC6C6AB78}.Release|Win32.ActiveCfg = Release|Win32
-		{12B4360B-743C-4B8D-849E-EAEBC6C6AB78}.Release|Win32.Build.0 = Release|Win32
 		{735AC961-FC3F-4717-A479-ADC857AA6C96}.Debug|Win32.ActiveCfg = Debug|Win32
 		{735AC961-FC3F-4717-A479-ADC857AA6C96}.Debug|Win32.Build.0 = Debug|Win32
 		{735AC961-FC3F-4717-A479-ADC857AA6C96}.Release|Win32.ActiveCfg = Release|Win32
@@ -43,6 +39,10 @@ Global
 		{C0C82CF8-7648-4377-9CA4-CA06BA421FC3}.Debug|Win32.Build.0 = Debug|Win32
 		{C0C82CF8-7648-4377-9CA4-CA06BA421FC3}.Release|Win32.ActiveCfg = Release|Win32
 		{C0C82CF8-7648-4377-9CA4-CA06BA421FC3}.Release|Win32.Build.0 = Release|Win32
+		{CB865443-7DD7-43E9-9ABB-4D9511FA3954}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB865443-7DD7-43E9-9ABB-4D9511FA3954}.Debug|Win32.Build.0 = Debug|Win32
+		{CB865443-7DD7-43E9-9ABB-4D9511FA3954}.Release|Win32.ActiveCfg = Release|Win32
+		{CB865443-7DD7-43E9-9ABB-4D9511FA3954}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

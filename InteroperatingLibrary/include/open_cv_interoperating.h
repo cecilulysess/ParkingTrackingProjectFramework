@@ -20,6 +20,7 @@
   #define LISO_CLASS_DECLSPEC    __declspec(dllimport)
 #endif
 
+#include "opencv2\core\types_c.h"
 // replaced include by forward declaration
 //#include "opencv2\core\core.hpp"
 namespace cv{
@@ -30,17 +31,19 @@ namespace lib_parking_tracking{
   
   class LISO_CLASS_DECLSPEC OpenCVInteroperator {
   public:
-    //将OpenCV2的 cv::Mat matrix 转换为其他版本所表示的图片
-    /*static GrayLevelImage4Byte*
-        GetGrayLevelImage4ByteFromMat(const cv::Mat& image_mat);
-    
-    static cv::Mat* GetMatFromGrayLevelImage4Byte(
-        const ::lib_img_spatial_operations::GrayLevelImage4Byte& image);*/
 
     // 显示一副图像，正常情况下应该是会自动缩放的
     static void ShowImage(
         const cv::Mat& image2show, 
         const char* window_title);
+
+    //将Mat转换为旧版的IplImage
+    static IplImage* Mat2IplImage(
+        cv::Mat& image2transform);
+
+    // 将IplImage转换为Mat
+    static cv::Mat& IplImage2Mat(
+        IplImage* image2transform);
   };
 
 

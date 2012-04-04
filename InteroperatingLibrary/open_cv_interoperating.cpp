@@ -11,6 +11,7 @@
 #include "include\open_cv_interoperating.h"
 
 #include "opencv2\highgui\highgui.hpp"
+#include "opencv\highgui.h"
 
 namespace lib_parking_tracking{
   void OpenCVInteroperator::ShowImage(
@@ -19,6 +20,16 @@ namespace lib_parking_tracking{
 
     cv::namedWindow(window_title, CV_WINDOW_NORMAL | CV_WINDOW_KEEPRATIO| CV_GUI_EXPANDED);
     imshow(window_title, image2show);
-    //cv::waitKey(0);
+    cv::waitKey(0);
+  }
+
+  IplImage* OpenCVInteroperator::Mat2IplImage(cv::Mat& image2transform){
+    IplImage img = image2transform;
+    return &img;
+  }
+
+  cv::Mat& OpenCVInteroperator::IplImage2Mat(IplImage* image2transform){
+    cv::Mat* image = new cv::Mat(image2transform);
+    return *image;
   }
 }//nslib_parking_tracking
